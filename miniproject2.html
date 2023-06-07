@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+        body{
+
+
+            background-color: rgb(29, 29, 26);
+            margin-top: 20px;
+            font-family: arial;
+            color: white;
+        }
+
+
+        #thumbpreview img
+        {
+
+         height: 80px;
+         padding: 4px;
+         border: 2px solid burlywood;
+         margin: 0px 10px 10px 0px;
+
+        }
+        #thumbpreview img:hover
+        {
+           border: 2x solid black;
+        }
+
+        #mainpreview img
+        {
+          width: 800px;
+          border: 4px solid burlywood;
+          padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container" align="center">
+    <h1>This is my Photo Gellary</h1> 
+
+    <script>
+      var arr=["#029FD4","#D43702","#1EFFOO"];
+        document.body.style.background=arr[Math.floor(Math.random()*arr.length)];
+    </script>
+      
+      <div id="thumbpreview">
+
+        <img  onmouseover="preview.src=one.src"   name="one" src="one.jpg"/> 
+        <img  onmouseover="preview.src=two.src"   name="two" src="two.png"/> 
+        <img  onmouseover="preview.src=three.src" name="three" src="three.jpg"/> 
+        <img  onmouseover="preview.src=four.src"  name="four" src="four.jpg"/> 
+        <img  onmouseover="preview.src=five.src"  name="five" src="five.jpg"/> 
+      </div>
+
+    <div id="mainpreview" align="center">
+
+      <img name="preview" src="one.jpg"/>
+
+
+    </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
